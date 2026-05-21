@@ -1,0 +1,446 @@
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FNF Customz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:black;
+color:white;
+font-family:'Montserrat',sans-serif;
+}
+
+/* TOP BAR */
+
+.top-bar{
+background:#111;
+text-align:center;
+padding:10px;
+font-size:14px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:black;
+}
+
+.logo{ 
+width:90px;
+background:white;
+padding:5px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 18px;
+font-weight:700;
+}
+
+nav a:hover{
+border-bottom:3px solid white;
+padding-bottom:8px;
+}
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:60px;
+min-height:700px;
+}
+
+.hero-left img{
+width:240px;
+background:white;
+padding:10px;
+margin-bottom:25px;
+}
+
+.hero-left h1{
+font-family:'Anton',sans-serif;
+font-size:90px;
+line-height:1;
+}
+
+.hero-left h2{
+font-size:28px;
+letter-spacing:10px;
+margin:15px 0 25px;
+font-weight:300;
+}
+
+.hero-left p{
+font-size:24px;
+line-height:1.5;
+margin-bottom:40px;
+color:#ddd;
+}
+
+.hero-btn{
+display:inline-block;
+padding:18px 45px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:900;
+font-size:20px;
+}
+
+.hero-right img{
+width:100%;
+height:650px;
+object-fit:cover;
+}
+
+/* SERVICES */
+
+.services{
+background:white;
+color:black;
+padding:70px 40px;
+}
+
+.title{
+text-align:center;
+font-family:'Anton',sans-serif;
+font-size:60px;
+margin-bottom:50px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+text-align:center;
+}
+
+.service-box{
+border-right:1px solid #ccc;
+padding:20px;
+}
+
+.service-box:last-child{
+border:none;
+}
+
+.service-box h3{
+margin-bottom:12px;
+font-size:22px;
+}
+
+/* FEATURED */
+
+.featured{
+background:black;
+padding:70px 20px;
+}
+
+.featured-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:8px;
+}
+
+.featured-grid img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+/* CONTACT */
+
+.contact{
+background:white;
+color:black;
+padding:50px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+align-items:center;
+text-align:center;
+}
+
+.contact-title{
+font-family:'Anton',sans-serif;
+font-size:55px;
+}
+
+.contact h3{
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+padding:60px;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
+}
+
+.footer-logo{
+width:120px;
+background:white;
+padding:8px;
+margin-bottom:20px;
+}
+
+footer p{
+color:#ccc;
+line-height:1.7;
+}
+
+.footer-links a{
+display:block;
+color:#ccc;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.copyright{
+text-align:center;
+padding:20px;
+background:black;
+border-top:1px solid #111;
+color:#888;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+}
+
+.service-grid,
+.featured-grid,
+.contact,
+footer{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:700px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.hero{
+padding:30px;
+text-align:center;
+}
+
+.hero-left h1{
+font-size:55px;
+}
+
+.service-grid,
+.featured-grid,
+.contact,
+footer{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="top-bar">
+PREMIUM QUALITY. BOLD DESIGNS. MADE FOR YOU.
+</div>
+
+<header>
+
+<img src="logo.png" class="logo">
+
+<nav>
+<a href="#">HOME</a>
+<a href="#">ABOUT</a>
+<a href="#">SERVICES</a>
+<a href="#">GALLERY</a>
+<a href="#">PRICING</a>
+<a href="#">CONTACT</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<img src="logo.png">
+
+<h1>FNF CUSTOMZ</h1>
+
+<h2>T-SHIRT PRINTING</h2>
+
+<p>
+High quality custom t-shirt printing made your way.
+</p>
+
+<a href="#" class="hero-btn">
+ORDER NOW
+</a>
+
+</div>
+
+<div class="hero-right">
+
+<img src="hero.jpg">
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2 class="title">OUR SERVICES</h2>
+
+<div class="service-grid">
+
+<div class="service-box">
+<h3>CUSTOM T-SHIRTS</h3>
+<p>Your design, your way.</p>
+</div>
+
+<div class="service-box">
+<h3>SCREEN PRINTING</h3>
+<p>Bold prints that last.</p>
+</div>
+
+<div class="service-box">
+<h3>BULK ORDERS</h3>
+<p>Perfect for events and brands.</p>
+</div>
+
+<div class="service-box">
+<h3>FAST TURNAROUND</h3>
+<p>Quality work, on time.</p>
+</div>
+
+<div class="service-box">
+<h3>PREMIUM QUALITY</h3>
+<p>Top quality blanks and inks.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="featured">
+
+<h2 class="title">FEATURED WORK</h2>
+
+<div class="featured-grid">
+
+<img src="shirt1.jpg">
+<img src="shirt2.jpg">
+<img src="shirt3.jpg">
+<img src="shirt4.jpg">
+<img src="shirt5.jpg">
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="contact-title">
+CONTACT US
+</div>
+
+<div>
+<h3>EMAIL</h3>
+<p>fnf_customz@yahoo.com</p>
+</div>
+
+<div>
+<h3>CASH APP</h3>
+<p>$fnfcustomz</p>
+</div>
+
+<div>
+<h3>INSTAGRAM</h3>
+<p>@fnf_customz_</p>
+</div>
+
+</section>
+
+<footer>
+
+<div>
+
+<img src="logo.png" class="footer-logo">
+
+<p>
+FNF Customz is your go-to source for high quality custom t-shirt printing.
+</p>
+
+<p>
+Any design. Any size. We print your vision.
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<h2>QUICK LINKS</h2>
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Gallery</a>
+<a href="#">Pricing</a>
+<a href="#">Contact</a>
+
+</div>
+
+<div>
+
+<h2>CONTACT INFO</h2>
+
+<p>Email: fnf_customz@yahoo.com</p>
+<p>Cash App: $fnfcustomz</p>
+<p>Instagram: @fnf_customz_</p>
+
+</div>
+
+</footer>
+
+<div class="copyright">
+© 2026 FNF Customz. All Rights Reserved.
+</div>
+
+</body>
+</html>
